@@ -1,0 +1,274 @@
+[
+  {
+    "category": "TILLAGE",
+    "categoryName": "जुताई (Tillage)",
+    "items": [
+      {
+        "id": "rotavator",
+        "name": "Rotavator",
+        "hindiName": "रोटावेटर",
+        "icon": "rotavator",
+        "defaultRate": 800.0,
+        "defaultRateType": "HOUR",
+        "specFields": [
+          { "key": "widthFeet", "label": "चौड़ाई (Feet)", "options": ["5 feet", "6 feet", "7 feet", "8 feet"], "default": "7 feet" },
+          { "key": "blades", "label": "ब्लेड संख्या (Blades)", "options": ["36 blades", "42 blades", "48 blades", "54 blades"], "default": "42 blades" },
+          { "key": "bladeType", "label": "ब्लेड प्रकार", "options": ["L-Shape", "C-Shape", "J-Shape"], "default": "L-Shape" }
+        ]
+      },
+      {
+        "id": "cultivator",
+        "name": "Cultivator",
+        "hindiName": "कल्टीवेटर (हल)",
+        "icon": "cultivator",
+        "defaultRate": 700.0,
+        "defaultRateType": "HOUR",
+        "specFields": [
+          { "key": "tines", "label": "फार संख्या (Tines)", "options": ["7 tines", "9 tines", "11 tines", "13 tines"], "default": "9 tines" },
+          { "key": "type", "label": "प्रकार", "options": ["Spring Loaded", "Rigid (सख्त)"], "default": "Spring Loaded" }
+        ]
+      },
+      {
+        "id": "mb_plough",
+        "name": "MB Plough",
+        "hindiName": "एमबी प्लाउ (पलटने वाला हल)",
+        "icon": "plough",
+        "defaultRate": 900.0,
+        "defaultRateType": "HOUR",
+        "specFields": [
+          { "key": "bottoms", "label": "बॉटम संख्या", "options": ["2 Bottom", "3 Bottom", "4 Bottom"], "default": "2 Bottom" },
+          { "key": "mechanism", "label": "सिस्टम", "options": ["Hydraulic Reversible", "Mechanical"], "default": "Hydraulic Reversible" }
+        ]
+      },
+      {
+        "id": "disc_harrow",
+        "name": "Disc Harrow",
+        "hindiName": "हैरो (डिस्क हैरो)",
+        "icon": "harrow",
+        "defaultRate": 750.0,
+        "defaultRateType": "HOUR",
+        "specFields": [
+          { "key": "discs", "label": "डिस्क संख्या", "options": ["12 Discs", "14 Discs", "16 Discs", "18 Discs"], "default": "14 Discs" },
+          { "key": "type", "label": "प्रकार", "options": ["Trailing", "Mounted"], "default": "Mounted" }
+        ]
+      },
+      {
+        "id": "laser_leveler",
+        "name": "Laser Land Leveler",
+        "hindiName": "लेजर लेवलर (कंप्यूटर मांझा)",
+        "icon": "leveler",
+        "defaultRate": 1200.0,
+        "defaultRateType": "HOUR",
+        "specFields": [
+          { "key": "bucketWidth", "label": "बकेट चौड़ाई (Feet)", "options": ["7 feet", "8 feet", "9 feet"], "default": "8 feet" },
+          { "key": "laserControl", "label": "ट्रांसमीटर", "options": ["Dual Slope", "Single Slope"], "default": "Dual Slope" }
+        ]
+      },
+      {
+        "id": "subsoiler",
+        "name": "Subsoiler",
+        "hindiName": "सबसॉयलर (गहरी जुताई)",
+        "icon": "subsoiler",
+        "defaultRate": 850.0,
+        "defaultRateType": "HOUR",
+        "specFields": [
+          { "key": "tines", "label": "आर्म्स संख्या", "options": ["1 Arm", "2 Arms", "3 Arms"], "default": "1 Arm" },
+          { "key": "depth", "label": "अधिकतम गहराई", "options": ["18 inch", "24 inch", "30 inch"], "default": "24 inch" }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "SOWING",
+    "categoryName": "बुवाई (Sowing)",
+    "items": [
+      {
+        "id": "seed_drill",
+        "name": "Seed Drill",
+        "hindiName": "सीड ड्रिल (बीज बोने की मशीन)",
+        "icon": "seed_drill",
+        "defaultRate": 500.0,
+        "defaultRateType": "ACRE",
+        "specFields": [
+          { "key": "rows", "label": "रो संख्या (Rows)", "options": ["9 rows", "11 rows", "13 rows"], "default": "9 rows" },
+          { "key": "boxType", "label": "खाद बॉक्स (Fertilizer Box)", "options": ["Seed + Fertilizer", "Seed Only"], "default": "Seed + Fertilizer" }
+        ]
+      },
+      {
+        "id": "super_seeder",
+        "name": "Super Seeder",
+        "hindiName": "सुपर सीडर (पराली + बुवाई)",
+        "icon": "super_seeder",
+        "defaultRate": 1500.0,
+        "defaultRateType": "ACRE",
+        "specFields": [
+          { "key": "widthFeet", "label": "चौड़ाई (Feet)", "options": ["6 feet", "7 feet", "8 feet"], "default": "7 feet" },
+          { "key": "rows", "label": "बुवाई लाइनें", "options": ["9 rows", "11 rows"], "default": "11 rows" }
+        ]
+      },
+      {
+        "id": "happy_seeder",
+        "name": "Happy Seeder",
+        "hindiName": "हैप्पी सीडर",
+        "icon": "happy_seeder",
+        "defaultRate": 1400.0,
+        "defaultRateType": "ACRE",
+        "specFields": [
+          { "key": "rows", "label": "लाइन संख्या", "options": ["9 rows", "10 rows", "11 rows"], "default": "9 rows" }
+        ]
+      },
+      {
+        "id": "pneumatic_planter",
+        "name": "Pneumatic Planter",
+        "hindiName": "न्यूमैटिक प्लांटर (सटीक बुवाई)",
+        "icon": "planter",
+        "defaultRate": 800.0,
+        "defaultRateType": "ACRE",
+        "specFields": [
+          { "key": "rows", "label": "लाइन संख्या", "options": ["2 rows", "4 rows", "6 rows"], "default": "4 rows" }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "CROP_CARE",
+    "categoryName": "देखभाल (Crop Care)",
+    "items": [
+      {
+        "id": "boom_sprayer",
+        "name": "Boom Sprayer",
+        "hindiName": "बूम स्प्रेयर (दवा छिड़काव)",
+        "icon": "sprayer",
+        "defaultRate": 400.0,
+        "defaultRateType": "ACRE",
+        "specFields": [
+          { "key": "tankLitres", "label": "टैंक क्षमता (Litres)", "options": ["400 L", "500 L", "600 L"], "default": "500 L" },
+          { "key": "boomWidth", "label": "बूम फैलाव (Feet)", "options": ["24 feet", "32 feet", "40 feet"], "default": "32 feet" }
+        ]
+      },
+      {
+        "id": "orchard_sprayer",
+        "name": "Orchard Sprayer",
+        "hindiName": "ऑर्चर्ड स्प्रेयर (बाग छिड़काव)",
+        "icon": "orchard_sprayer",
+        "defaultRate": 600.0,
+        "defaultRateType": "HOUR",
+        "specFields": [
+          { "key": "tankLitres", "label": "टैंक क्षमता (Litres)", "options": ["300 L", "400 L", "600 L"], "default": "400 L" },
+          { "key": "fanSize", "label": "ब्लोअर साइज", "options": ["600 mm", "750 mm"], "default": "600 mm" }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "HARVESTING",
+    "categoryName": "कटाई (Harvesting)",
+    "items": [
+      {
+        "id": "reaper_binder",
+        "name": "Reaper Binder",
+        "hindiName": "रीपर बाइंडर (कटाई + बंडल)",
+        "icon": "reaper",
+        "defaultRate": 1600.0,
+        "defaultRateType": "ACRE",
+        "specFields": [
+          { "key": "cutWidth", "label": "कटिंग चौड़ाई", "options": ["4 feet", "5 feet"], "default": "4 feet" }
+        ]
+      },
+      {
+        "id": "thresher",
+        "name": "Multi-Crop Thresher",
+        "hindiName": "थ्रेशर (गहाई मशीन)",
+        "icon": "thresher",
+        "defaultRate": 900.0,
+        "defaultRateType": "HOUR",
+        "specFields": [
+          { "key": "drumSize", "label": "ड्रम साइज", "options": ["36 inch", "42 inch", "48 inch"], "default": "42 inch" },
+          { "key": "cropSuitability", "label": "उपयुक्त फसल", "options": ["Wheat & Gram", "Soybean & Mustard", "Multi-Crop"], "default": "Multi-Crop" }
+        ]
+      },
+      {
+        "id": "straw_reaper",
+        "name": "Straw Reaper",
+        "hindiName": "स्ट्रॉ रीपर (भूसा बनाने वाली मशीन)",
+        "icon": "straw_reaper",
+        "defaultRate": 1300.0,
+        "defaultRateType": "HOUR",
+        "specFields": [
+          { "key": "cutWidth", "label": "कटिंग चौड़ाई", "options": ["6.5 feet", "7 feet"], "default": "7 feet" },
+          { "key": "blowerTrolley", "label": "ब्लोअर पाइप", "options": ["With Double Blower", "Single Blower"], "default": "With Double Blower" }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "TRANSPORT",
+    "categoryName": "ढुलाई (Transport)",
+    "items": [
+      {
+        "id": "trolley",
+        "name": "Trolley / Trailer",
+        "hindiName": "ट्रॉली (ट्राला)",
+        "icon": "trolley",
+        "defaultRate": 600.0,
+        "defaultRateType": "CHAKKAR",
+        "specFields": [
+          { "key": "axle", "label": "एक्सल", "options": ["Single Axle (2 टायर)", "Double Axle (4 टायर)"], "default": "Single Axle (2 टायर)" },
+          { "key": "capacity", "label": "क्षमता (Tonnes)", "options": ["3 Tonne", "5 Tonne", "7 Tonne", "10 Tonne"], "default": "5 Tonne" },
+          { "key": "tipping", "label": "अनलोडिंग", "options": ["Hydraulic Tipping (उठाने वाली)", "Non-Tipping (मैन्युअल)"], "default": "Hydraulic Tipping (उठाने वाली)" }
+        ]
+      },
+      {
+        "id": "water_tanker",
+        "name": "Water Tanker",
+        "hindiName": "वाटर टैंकर (पानी का टैंकर)",
+        "icon": "tanker",
+        "defaultRate": 400.0,
+        "defaultRateType": "CHAKKAR",
+        "specFields": [
+          { "key": "capacityLitres", "label": "क्षमता (Litres)", "options": ["3,000 L", "4,000 L", "5,000 L", "6,000 L"], "default": "4,000 L" }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "CUSTOM",
+    "categoryName": "अन्य / कस्टम (Other)",
+    "items": [
+      {
+        "id": "dozer_blade",
+        "name": "Dozer Blade",
+        "hindiName": "डोजर ब्लेड (मिट्टी समतल)",
+        "icon": "dozer",
+        "defaultRate": 800.0,
+        "defaultRateType": "HOUR",
+        "specFields": [
+          { "key": "widthFeet", "label": "चौड़ाई (Feet)", "options": ["6 feet", "7 feet", "8 feet"], "default": "7 feet" }
+        ]
+      },
+      {
+        "id": "chaff_cutter",
+        "name": "Tractor PTO Chaff Cutter",
+        "hindiName": "कुट्टी मशीन (चारा काटने वाली)",
+        "icon": "chaff_cutter",
+        "defaultRate": 600.0,
+        "defaultRateType": "HOUR",
+        "specFields": [
+          { "key": "blades", "label": "ब्लेड", "options": ["2 Blades", "3 Blades", "4 Blades"], "default": "3 Blades" }
+        ]
+      },
+      {
+        "id": "post_hole_digger",
+        "name": "Post Hole Digger",
+        "hindiName": "खड्डा खोदने की मशीन (डिगर)",
+        "icon": "digger",
+        "defaultRate": 100.0,
+        "defaultRateType": "CUSTOM",
+        "customUnitName": "प्रति खड्डा",
+        "specFields": [
+          { "key": "augerSize", "label": "ऑगर साइज (ड्रिल)", "options": ["9 inch", "12 inch", "18 inch"], "default": "12 inch" }
+        ]
+      }
+    ]
+  }
+]

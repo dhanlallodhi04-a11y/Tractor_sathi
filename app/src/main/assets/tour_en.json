@@ -1,0 +1,30 @@
+[
+  {
+    "id": "summary_card",
+    "target": "summary_card",
+    "title": "Summary & Ledger Card",
+    "description": "View total work value, received payments, outstanding balance, and your calculated Net Profit here.",
+    "speechText": "Welcome to Kisan Saathi! View your total work, collected payments, balance due, and net profit right here."
+  },
+  {
+    "id": "add_job",
+    "target": "fab_add_job",
+    "title": "Add New Job (+)",
+    "description": "Tap here anytime to log field work with rotavator, cultivator, seed drill, or trolley with automatic billing.",
+    "speechText": "Tap this action button whenever you complete a field job to log hours, acres, and payment status."
+  },
+  {
+    "id": "bottom_nav",
+    "target": "bottom_nav_bar",
+    "title": "Navigation Menu",
+    "description": "Switch easily between Jobs list, Analytics reports, Diesel expenses, and Kisan ledger.",
+    "speechText": "Use the bottom bar to view past jobs, financial reports, diesel expenses, and Kisan accounts."
+  },
+  {
+    "id": "ai_assistant",
+    "target": "ai_assistant_bubble",
+    "title": "AI Assistant Bubble",
+    "description": "Ask questions via voice or text anytime to analyze your earnings, optimize rates, and get instant guidance.",
+    "speechText": "This is your AI Farm Assistant. Tap it anytime to ask questions about your accounts or tractor operations."
+  }
+]

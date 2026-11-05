@@ -1,0 +1,166 @@
+[
+  {
+    "brand": "Mahindra",
+    "hindiBrand": "महिंद्रा",
+    "models": [
+      { "name": "575 DI", "hp": 45, "series": "BhoomiPutra" },
+      { "name": "475 DI", "hp": 42, "series": "BhoomiPutra" },
+      { "name": "275 DI TU", "hp": 39, "series": "Sarpanch" },
+      { "name": "Arjun Novo 605 DI-i", "hp": 57, "series": "Arjun" },
+      { "name": "Arjun Novo 605 DI-PS", "hp": 50, "series": "Arjun" },
+      { "name": "Yuvo Tech+ 575", "hp": 47, "series": "Yuvo" },
+      { "name": "Yuvo 415 DI", "hp": 40, "series": "Yuvo" },
+      { "name": "Jivo 245 DI (Mini)", "hp": 24, "series": "Jivo" },
+      { "name": "OJA 3140", "hp": 40, "series": "OJA" }
+    ]
+  },
+  {
+    "brand": "Swaraj",
+    "hindiBrand": "स्वराज",
+    "models": [
+      { "name": "744 FE", "hp": 48, "series": "FE Series" },
+      { "name": "855 FE", "hp": 52, "series": "FE Series" },
+      { "name": "735 FE", "hp": 40, "series": "FE Series" },
+      { "name": "742 FE", "hp": 42, "series": "FE Series" },
+      { "name": "963 FE", "hp": 60, "series": "FE Series" },
+      { "name": "843 XM", "hp": 45, "series": "XM Series" },
+      { "name": "717 (Mini)", "hp": 15, "series": "Mini" },
+      { "name": "Target 630", "hp": 29, "series": "Target" }
+    ]
+  },
+  {
+    "brand": "Sonalika",
+    "hindiBrand": "सोनालीका",
+    "models": [
+      { "name": "DI 745 III Sikander", "hp": 50, "series": "Sikander" },
+      { "name": "DI 35 Sikander", "hp": 39, "series": "Sikander" },
+      { "name": "DI 750 III", "hp": 55, "series": "Heavy Duty" },
+      { "name": "DI 60 Sikander", "hp": 60, "series": "Sikander" },
+      { "name": "Tiger 55", "hp": 55, "series": "Tiger" },
+      { "name": "DI 42 RX", "hp": 42, "series": "RX Series" },
+      { "name": "GT 22 (Mini)", "hp": 22, "series": "Baghban" }
+    ]
+  },
+  {
+    "brand": "John Deere",
+    "hindiBrand": "जॉन डियर",
+    "models": [
+      { "name": "5050 D", "hp": 50, "series": "5D Series" },
+      { "name": "5310 Power Tech", "hp": 55, "series": "5E Series" },
+      { "name": "5105 D", "hp": 40, "series": "5D Series" },
+      { "name": "5210 GearPro", "hp": 50, "series": "5E Series" },
+      { "name": "5405 GearPro", "hp": 63, "series": "5E Series" },
+      { "name": "3028 EN (Mini)", "hp": 28, "series": "Specialty" }
+    ]
+  },
+  {
+    "brand": "Massey Ferguson",
+    "hindiBrand": "मैसी फर्ग्यूसन / टैफे",
+    "models": [
+      { "name": "241 DI Maha Shakti", "hp": 42, "series": "Maha Shakti" },
+      { "name": "1035 DI Maha Shakti", "hp": 36, "series": "Maha Shakti" },
+      { "name": "245 DI Smart", "hp": 50, "series": "Smart Series" },
+      { "name": "9500 4WD", "hp": 58, "series": "High HP" },
+      { "name": "7250 Power Up", "hp": 50, "series": "Power Up" },
+      { "name": "5118 (Mini)", "hp": 20, "series": "Mini" }
+    ]
+  },
+  {
+    "brand": "Eicher",
+    "hindiBrand": "आयशर",
+    "models": [
+      { "name": "380 Super DI", "hp": 40, "series": "Super DI" },
+      { "name": "485 Super DI", "hp": 45, "series": "Super DI" },
+      { "name": "242 (1 Cyl)", "hp": 25, "series": "Classic" },
+      { "name": "333 Super DI", "hp": 36, "series": "Super DI" },
+      { "name": "557 Super DI", "hp": 50, "series": "Prima G3" },
+      { "name": "551 Super DI", "hp": 50, "series": "Prima G3" }
+    ]
+  },
+  {
+    "brand": "New Holland",
+    "hindiBrand": "न्यू हॉलैंड",
+    "models": [
+      { "name": "3630 TX Plus", "hp": 55, "series": "TX Series" },
+      { "name": "3230 TX Super", "hp": 45, "series": "TX Series" },
+      { "name": "3600-2 TX", "hp": 50, "series": "TX Series" },
+      { "name": "Excel 4710", "hp": 47, "series": "Excel" },
+      { "name": "5620 TX Plus", "hp": 65, "series": "TX Series" }
+    ]
+  },
+  {
+    "brand": "Kubota",
+    "hindiBrand": "कुबोटा",
+    "models": [
+      { "name": "MU 4501", "hp": 45, "series": "MU Series" },
+      { "name": "MU 5502 4WD", "hp": 50, "series": "MU Series" },
+      { "name": "B2441 (Mini 4WD)", "hp": 24, "series": "Compact" },
+      { "name": "L4508 4WD", "hp": 45, "series": "L Series" }
+    ]
+  },
+  {
+    "brand": "Farmtrac",
+    "hindiBrand": "फार्मट्रैक (एस्कॉर्ट्स)",
+    "models": [
+      { "name": "60 PowerMaxx", "hp": 55, "series": "PowerMaxx" },
+      { "name": "45 Smart", "hp": 48, "series": "Smart" },
+      { "name": "6055 PowerMaxx", "hp": 60, "series": "PowerMaxx" },
+      { "name": "Champion 35", "hp": 38, "series": "Champion" }
+    ]
+  },
+  {
+    "brand": "Powertrac",
+    "hindiBrand": "पावरट्रैक",
+    "models": [
+      { "name": "Euro 50", "hp": 50, "series": "Euro" },
+      { "name": "439 Plus LoadMaxx", "hp": 41, "series": "Plus" },
+      { "name": "Euro 45 Plus", "hp": 47, "series": "Euro" },
+      { "name": "Euro 60 Next", "hp": 60, "series": "Next" }
+    ]
+  },
+  {
+    "brand": "Preet",
+    "hindiBrand": "प्रीत",
+    "models": [
+      { "name": "955 DI", "hp": 50, "series": "DI" },
+      { "name": "4549", "hp": 45, "series": "4WD" },
+      { "name": "6049", "hp": 60, "series": "Heavy" }
+    ]
+  },
+  {
+    "brand": "Force",
+    "hindiBrand": "फोर्स",
+    "models": [
+      { "name": "Sanman 5000", "hp": 45, "series": "Sanman" },
+      { "name": "Balwan 400", "hp": 40, "series": "Balwan" },
+      { "name": "Orchard DLX (Mini)", "hp": 27, "series": "Orchard" }
+    ]
+  },
+  {
+    "brand": "VST Shakti",
+    "hindiBrand": "वीएसटी शक्ति",
+    "models": [
+      { "name": "932 DI 4WD", "hp": 30, "series": "Compact" },
+      { "name": "MT 270 VIRAAT", "hp": 27, "series": "Mini" },
+      { "name": "Zetor 4511", "hp": 45, "series": "Zetor" }
+    ]
+  },
+  {
+    "brand": "ACE",
+    "hindiBrand": "एसीई",
+    "models": [
+      { "name": "DI 450 NG", "hp": 45, "series": "NG" },
+      { "name": "DI 550 NG", "hp": 50, "series": "NG" },
+      { "name": "DI 6500", "hp": 61, "series": "Heavy" }
+    ]
+  },
+  {
+    "brand": "Solis",
+    "hindiBrand": "सोलिस",
+    "models": [
+      { "name": "5015 E", "hp": 50, "series": "E Series" },
+      { "name": "4515 E", "hp": 45, "series": "E Series" },
+      { "name": "6024 S 4WD", "hp": 60, "series": "S Series" }
+    ]
+  }
+]

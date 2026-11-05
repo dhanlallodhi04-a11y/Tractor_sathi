@@ -1,0 +1,180 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile with personal and farming details",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "village": { "type": "string" },
+        "dob": { "type": "string" },
+        "photoUri": { "type": "string" },
+        "language": { "type": "string" },
+        "onboardingDone": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "name", "createdAt"]
+    },
+    "Customer": {
+      "title": "Customer",
+      "description": "Farmer / customer record (Kisan)",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "village": { "type": "string" },
+        "notes": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "userId", "name", "createdAt"]
+    },
+    "Vehicle": {
+      "title": "Vehicle",
+      "description": "Tractor details",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "brand": { "type": "string" },
+        "model": { "type": "string" },
+        "hp": { "type": "number" },
+        "nickname": { "type": "string" },
+        "regNo": { "type": "string" },
+        "year": { "type": "string" },
+        "isDefault": { "type": "boolean" },
+        "photoUri": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "userId", "model", "createdAt"]
+    },
+    "Implement": {
+      "title": "Implement",
+      "description": "Agricultural implement with specs and rate",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "hindiName": { "type": "string" },
+        "category": { "type": "string" },
+        "rateType": { "type": "string" },
+        "customUnitName": { "type": "string" },
+        "defaultRate": { "type": "number" },
+        "details": { "type": "string" },
+        "active": { "type": "boolean" },
+        "photo": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "userId", "name", "rateType", "defaultRate", "createdAt"]
+    },
+    "Job": {
+      "title": "Job",
+      "description": "Field work job record with billing",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "customerId": { "type": "string" },
+        "customerName": { "type": "string" },
+        "vehicleId": { "type": "string" },
+        "vehicleName": { "type": "string" },
+        "implementId": { "type": "string" },
+        "implementName": { "type": "string" },
+        "implementDetailsSnapshot": { "type": "string" },
+        "dateMillis": { "type": "number" },
+        "status": { "type": "string" },
+        "rateTypeSnapshot": { "type": "string" },
+        "customUnitSnapshot": { "type": "string" },
+        "rateSnapshot": { "type": "number" },
+        "hours": { "type": "number" },
+        "minutes": { "type": "number" },
+        "area": { "type": "number" },
+        "quantity": { "type": "number" },
+        "extras": { "type": "number" },
+        "discount": { "type": "number" },
+        "total": { "type": "number" },
+        "paidAmount": { "type": "number" },
+        "paymentMethod": { "type": "string" },
+        "notes": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "userId", "customerId", "customerName", "total", "createdAt"]
+    },
+    "Expense": {
+      "title": "Expense",
+      "description": "Fuel and maintenance expense record",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "vehicleId": { "type": "string" },
+        "vehicleName": { "type": "string" },
+        "category": { "type": "string" },
+        "amount": { "type": "number" },
+        "litres": { "type": "number" },
+        "dateMillis": { "type": "number" },
+        "notes": { "type": "string" },
+        "photoUri": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "userId", "category", "amount", "createdAt"]
+    },
+    "SupportTicket": {
+      "title": "SupportTicket",
+      "description": "Customer support and feedback ticket",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "issueType": { "type": "string" },
+        "message": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "userId", "issueType", "message", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "UserProfile" },
+      "description": "User profile document keyed by Auth UID"
+    },
+    "/users/{userId}/customers/{customerId}": {
+      "schema": { "$ref": "Customer" },
+      "description": "Customer records for this user"
+    },
+    "/users/{userId}/vehicles/{vehicleId}": {
+      "schema": { "$ref": "Vehicle" },
+      "description": "Tractor records for this user"
+    },
+    "/users/{userId}/implements/{implementId}": {
+      "schema": { "$ref": "Implement" },
+      "description": "Implement records for this user"
+    },
+    "/users/{userId}/jobs/{jobId}": {
+      "schema": { "$ref": "Job" },
+      "description": "Field work jobs for this user"
+    },
+    "/users/{userId}/expenses/{expenseId}": {
+      "schema": { "$ref": "Expense" },
+      "description": "Expense records for this user"
+    },
+    "/support_tickets/{ticketId}": {
+      "schema": { "$ref": "SupportTicket" },
+      "description": "Support tickets submitted by users"
+    }
+  }
+}

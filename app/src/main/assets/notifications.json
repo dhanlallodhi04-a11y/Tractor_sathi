@@ -1,0 +1,227 @@
+{
+  "welcome": {
+    "title_hi": "स्वागत है किसान साथी में! 🎉",
+    "title_en": "Welcome to Kisan Saathi! 🎉",
+    "variants_hi": [
+      "स्वागत है, {name}! किसान साथी में आपका स्वागत है। अब अपना हिसाब आसान और सुरक्षित बनाइए।",
+      "राम-राम {name} जी! आपका डिजिटल बहीखाता तैयार है। ट्रैक्टर का हर हिसाब अब एक जगह।"
+    ],
+    "variants_en": [
+      "Welcome, {name}! Your smart tractor ledger is ready. Keeping accounts is now simple and secure.",
+      "Hello {name}! Start logging jobs and customer dues with peace of mind."
+    ]
+  },
+  "first_kisan": {
+    "title_hi": "पहला किसान जुड़ गया! 🎉",
+    "title_en": "First Kisan Added! 🎉",
+    "variants_hi": [
+      "बधाई हो {name}! आपने अपना पहला किसान जोड़ना सीख लिया है। अब उसका पहला काम भी दर्ज करें।",
+      "शानदार शुरुआत {name} जी! पहला किसान जुड़ गया है। अब उसका काम जोड़कर हिसाब शुरू करें।"
+    ],
+    "variants_en": [
+      "Congratulations {name}! You added your first customer. Now add their first job.",
+      "Great start {name}! Your first Kisan is saved. Let's record their work."
+    ]
+  },
+  "first_job": {
+    "title_hi": "पहला काम दर्ज हुआ! 🚜",
+    "title_en": "First Job Logged! 🚜",
+    "variants_hi": [
+      "शाबाश! आपका पहला काम दर्ज हो गया। अब हर काम का हिसाब आपके पास रहेगा।",
+      "बहुत बढ़िया! पहला काम सुरक्षित हो गया है। समय और पैसे का पक्का हिसाब।"
+    ],
+    "variants_en": [
+      "Well done! Your first job has been recorded. Every rupee is now tracked.",
+      "Awesome! Job saved successfully. Keeping your tractor work organized."
+    ]
+  },
+  "first_payment": {
+    "title_hi": "पहला भुगतान मिला! 💰",
+    "title_en": "First Payment Received! 💰",
+    "variants_hi": [
+      "बहुत बढ़िया! पहला भुगतान दर्ज हुआ, अब हिसाब पक्का रहेगा।",
+      "शानदार! कमाई का पहला पैसा दर्ज हो गया। बहीखाता बिल्कुल सही चल रहा है।"
+    ],
+    "variants_en": [
+      "Great! First payment recorded. Your ledger is up to date.",
+      "Wonderful! Cash received logged into your books."
+    ]
+  },
+  "new_vehicle": {
+    "title_hi": "नया ट्रैक्टर जुड़ा! 🚜",
+    "title_en": "New Tractor Added! 🚜",
+    "variants_hi": [
+      "बधाई हो! आपके वाहन सेक्शन में नया सदस्य जुड़ा: {vehicle} ({hp} HP)। 🚜",
+      "वाह! {vehicle} अब आपके बेड़े में शामिल है। अब इसके डीज़ल और काम का अलग हिसाब रखें।"
+    ],
+    "variants_en": [
+      "Congratulations! New member added to your fleet: {vehicle} ({hp} HP). 🚜",
+      "Awesome! {vehicle} is now ready for tracking jobs and fuel."
+    ]
+  },
+  "new_implement": {
+    "title_hi": "नया औज़ार जुड़ा! 🛠️",
+    "title_en": "New Implement Added! 🛠️",
+    "variants_hi": [
+      "नया औज़ार जुड़ा: {implement}। अब इसका रेट एक बार सेव है और काम जोड़ते समय अपने आप आएगा।",
+      "बधाई हो! औज़ारों में {implement} शामिल हुआ। सही रेट से सही कमाई।"
+    ],
+    "variants_en": [
+      "New implement added: {implement}. Its rate is saved for quick job entries.",
+      "Great! {implement} is added to your tools."
+    ]
+  },
+  "kisan_milestones": {
+    "50": {
+      "title_hi": "50 किसान! 🌱",
+      "title_en": "50 Kisans! 🌱",
+      "msg_hi": "50 किसान! आपका नेटवर्क बढ़ रहा है और लोग आप पर भरोसा करते हैं।",
+      "msg_en": "50 farmers connected! Your farming business is expanding."
+    },
+    "100": {
+      "title_hi": "100 किसान पूरे! 🏆",
+      "title_en": "100 Kisans Milestone! 🏆",
+      "msg_hi": "100 किसान जुड़ गए, कमाल! अब आप इलाके के भरोसेमंद नाम हैं।",
+      "msg_en": "100 customers reached! You are now a trusted tractor operator in your area."
+    },
+    "200": {
+      "title_hi": "200 किसान! 🥇",
+      "title_en": "200 Kisans Milestone! 🥇",
+      "msg_hi": "शाबाश! 200 किसान जुड़ चुके हैं। आपका काम और साख दोनों बुलंद हैं।",
+      "msg_en": "200 farmers logged! An impressive network built on hard work."
+    },
+    "500": {
+      "title_hi": "500 किसान - बड़ी उपलब्धि! 👑",
+      "title_en": "500 Kisans - True Leader! 👑",
+      "msg_hi": "500 किसान, आप इलाके के भरोसेमंद नाम हैं! आपकी लगन को सलाम।",
+      "msg_en": "500 farmers! A landmark achievement reflecting exceptional service."
+    },
+    "1000": {
+      "title_hi": "1000 किसान! इतिहास रच दिया 🌟",
+      "title_en": "1000 Kisans - Champion! 🌟",
+      "msg_hi": "1000 किसान! आपने बहुत बड़ा मुकाम पाया। आप सच में किसानों के सच्चे साथी हैं!",
+      "msg_en": "1000 farmers! You have created a historic milestone!"
+    }
+  },
+  "payment_due": {
+    "title_hi": "बाकी पैसे की याद 💵",
+    "title_en": "Payment Due Reminder 💵",
+    "endings_hi": [
+      "आज एक कॉल कर लीजिए!",
+      "जल्दी वसूल करें और अपने लक्ष्य पूरे करें!",
+      "आपकी मेहनत की कमाई है, समय पर मांगें।",
+      "थोड़ी मेहनत, पूरा पैसा!",
+      "बात करने से काम आसान हो जाता है।"
+    ],
+    "endings_en": [
+      "Give them a quick friendly call today!",
+      "Collect promptly to meet your targets!",
+      "It is your hard-earned income, collect on time.",
+      "A quick reminder goes a long way!"
+    ]
+  },
+  "monthly_baki_summary": {
+    "title_hi": "महीने की शुरुआत - कुल बाकी 📊",
+    "title_en": "Month Start - Total Dues 📊",
+    "variants_hi": [
+      "इस महीने की शुरुआत: कुल ₹{total} बाकी है ({count} किसानों से)। आज से वसूली शुरू करें।",
+      "नया महीना शुरू! {count} किसानों से कुल ₹{total} लेना बाकी है। आज ही कॉल करके याद दिलाएं।"
+    ],
+    "variants_en": [
+      "Beginning of month: Total ₹{total} pending from {count} farmers. Plan your collections today.",
+      "New month start! ₹{total} due from {count} customers. Check details now."
+    ]
+  },
+  "grouped_payment_summary": {
+    "title_hi": "आज के बाकी तकादे 🔔",
+    "title_en": "Today's Payment Reminders 🔔",
+    "variants_hi": [
+      "आज {count} किसानों से कुल ₹{total} लेने हैं। बहीखाते में देखकर बात करें।",
+      "{count} किसानों की आज तारीख है, कुल ₹{total} बाकी। आज कॉल करें।"
+    ],
+    "variants_en": [
+      "Total ₹{total} due from {count} farmers today. Check ledger details.",
+      "{count} payment reminders due today totaling ₹{total}."
+    ]
+  },
+  "scheduled_job": {
+    "title_hi": "आगामी काम की याद 🚜",
+    "title_en": "Scheduled Job Reminder 🚜",
+    "variants_hi": [
+      "आज {kisan} के यहाँ {implement} का काम तय है। समय पर पहुँचें।",
+      "कल {kisan} के यहाँ {implement} का काम है। ट्रैक्टर और डीज़ल तैयार रखें।"
+    ],
+    "variants_en": [
+      "Today: {implement} job scheduled for {kisan}.",
+      "Tomorrow: {implement} job booked for {kisan}. Prepare your tractor."
+    ]
+  },
+  "evening_nudge": {
+    "title_hi": "आज का काम दर्ज करें 📝",
+    "title_en": "Log Today's Work 📝",
+    "variants_hi": [
+      "आज का काम दर्ज करना न भूलें! 2 मिनट में हिसाब जोड़ें और निश्चिंत सोएं।",
+      "आज दिनभर क्या काम हुआ? अभी दर्ज करें ताकि कोई घंटा या बीघा न छूटे।"
+    ],
+    "variants_en": [
+      "Don't forget to log today's tractor jobs! Takes just 2 minutes.",
+      "Record today's work to keep your hours and earnings accurate."
+    ]
+  },
+  "weekly_summary": {
+    "title_hi": "हफ्ते का हिसाब-किताब 📈",
+    "title_en": "Weekly Summary 📈",
+    "variants_hi": [
+      "इस हफ्ते: ₹{billed} का काम हुआ, ₹{collected} मिले और शुद्ध मुनाफा ₹{profit} रहा। रिपोर्ट देखें!",
+      "हफ्ते का रिपोर्ट कार्ड तैयार है: कमाई ₹{billed}, मिला पैसा ₹{collected}। पूरा ब्यौरा देखें।"
+    ],
+    "variants_en": [
+      "This week: Work ₹{billed}, Collected ₹{collected}, Net Profit ₹{profit}. View report!",
+      "Your weekly ledger is ready: Total ₹{billed} billed. Check analytics."
+    ]
+  },
+  "vehicle_service": {
+    "title_hi": "ट्रैक्टर सर्विस का समय 🔧",
+    "title_en": "Tractor Service Due 🔧",
+    "variants_hi": [
+      "{vehicle} की सर्विस का समय पास है ({hours} घंटे चले)। इंजन ऑयल और फिल्टर चेक करें।",
+      "{vehicle} ने {hours} घंटे पूरे कर लिए हैं। समय पर सर्विस कराएं और ट्रैक्टर को नया रखें।"
+    ],
+    "variants_en": [
+      "Service due soon for {vehicle} ({hours} engine hours). Check oil and filters.",
+      "{vehicle} has completed {hours} hours. Timely service keeps performance optimal."
+    ]
+  },
+  "backup_alert": {
+    "title_hi": "डेटा बैकअप ज़रूरी ☁️",
+    "title_en": "Cloud Backup Reminder ☁️",
+    "variants_hi": [
+      "आपका डेटा सुरक्षित रखने के लिए बैकअप बाकी है। इंटरनेट चालू करके ऐप खोलें।",
+      "क्लाउड सिंक पिछले कुछ समय से नहीं हुआ है। एक बार सिंक बटन दबाएं।"
+    ],
+    "variants_en": [
+      "Cloud backup is pending. Open app with internet to secure your ledger.",
+      "Sync hasn't run recently. Tap sync to keep your records safe."
+    ]
+  },
+  "tips": {
+    "day1": {
+      "title_hi": "सलाह: बाकी किसानों की लिस्ट 💡",
+      "title_en": "Tip: View Pending Dues 💡",
+      "msg_hi": "होम स्क्रीन पर 'बाकी है पैसा' कार्ड दबाकर आप सभी उधार किसानों की लिस्ट एक साथ देख सकते हैं।",
+      "msg_en": "Tap the 'Due (Baki)' card on Home to see all pending customer balances at a glance."
+    },
+    "day3": {
+      "title_hi": "सलाह: बोलकर भरें 🎙️",
+      "title_en": "Tip: Voice Entry 🎙️",
+      "msg_hi": "काम या किसान जोड़ते समय माइक बटन दबाकर बोलें। ऐप अपने आप नाम और रकम पहचान लेता है।",
+      "msg_en": "Tap the microphone button to speak customer names and rates. The app fills fields automatically."
+    },
+    "day7": {
+      "title_hi": "सलाह: व्हाट्सएप रसीद भेजें 📱",
+      "title_en": "Tip: Send WhatsApp Receipts 📱",
+      "msg_hi": "काम पूरा होने पर किसान को सीधे व्हाट्सएप पर सुंदर रसीद और हिसाब भेजें।",
+      "msg_en": "Send neat job receipts and dues directly to farmers on WhatsApp with one tap."
+    }
+  }
+}

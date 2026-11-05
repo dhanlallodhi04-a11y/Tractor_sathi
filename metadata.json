@@ -1,0 +1,6 @@
+{
+  "name": "Kisan Saathi",
+  "description": "Smart tractor business management, job logs, customer ledger, diesel expenses, and analytics for tractor owners",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

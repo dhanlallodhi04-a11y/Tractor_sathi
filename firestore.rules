@@ -1,0 +1,196 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidTimestamp(ts) {
+      return ts is timestamp && ts <= request.time;
+    }
+
+    function isValidUser(data) {
+      return data.userId == request.auth.uid &&
+             data.name is string && data.name.size() > 0 && data.name.size() <= 100 &&
+             (!('phone' in data) || data.phone == null || (data.phone is string && data.phone.size() <= 30)) &&
+             (!('village' in data) || data.village == null || (data.village is string && data.village.size() <= 100)) &&
+             (!('dob' in data) || data.dob == null || (data.dob is string && data.dob.size() <= 20)) &&
+             (!('photoUri' in data) || data.photoUri == null || (data.photoUri is string && data.photoUri.size() <= 1000)) &&
+             (!('language' in data) || data.language == null || (data.language is string && data.language.size() <= 10)) &&
+             (!('onboardingDone' in data) || data.onboardingDone is bool) &&
+             isValidTimestamp(data.createdAt) &&
+             (!('updatedAt' in data) || isValidTimestamp(data.updatedAt));
+    }
+
+    function isValidCustomer(data) {
+      return data.userId == request.auth.uid &&
+             data.name is string && data.name.size() > 0 && data.name.size() <= 100 &&
+             (!('phone' in data) || data.phone == null || (data.phone is string && data.phone.size() <= 30)) &&
+             (!('village' in data) || data.village == null || (data.village is string && data.village.size() <= 100)) &&
+             (!('notes' in data) || data.notes == null || (data.notes is string && data.notes.size() <= 1000)) &&
+             isValidTimestamp(data.createdAt) &&
+             (!('updatedAt' in data) || isValidTimestamp(data.updatedAt));
+    }
+
+    function isValidVehicle(data) {
+      return data.userId == request.auth.uid &&
+             data.model is string && data.model.size() > 0 && data.model.size() <= 100 &&
+             (!('brand' in data) || data.brand == null || (data.brand is string && data.brand.size() <= 100)) &&
+             (!('hp' in data) || data.hp is number) &&
+             (!('nickname' in data) || data.nickname == null || (data.nickname is string && data.nickname.size() <= 100)) &&
+             (!('regNo' in data) || data.regNo == null || (data.regNo is string && data.regNo.size() <= 50)) &&
+             (!('year' in data) || data.year == null || (data.year is string && data.year.size() <= 10)) &&
+             (!('isDefault' in data) || data.isDefault is bool) &&
+             (!('photoUri' in data) || data.photoUri == null || (data.photoUri is string && data.photoUri.size() <= 1000)) &&
+             isValidTimestamp(data.createdAt) &&
+             (!('updatedAt' in data) || isValidTimestamp(data.updatedAt));
+    }
+
+    function isValidImplement(data) {
+      return data.userId == request.auth.uid &&
+             data.name is string && data.name.size() > 0 && data.name.size() <= 100 &&
+             data.rateType is string && data.rateType.size() <= 30 &&
+             data.defaultRate is number &&
+             (!('hindiName' in data) || data.hindiName == null || (data.hindiName is string && data.hindiName.size() <= 100)) &&
+             (!('category' in data) || data.category == null || (data.category is string && data.category.size() <= 50)) &&
+             (!('customUnitName' in data) || data.customUnitName == null || (data.customUnitName is string && data.customUnitName.size() <= 50)) &&
+             (!('details' in data) || data.details == null || (data.details is string && data.details.size() <= 500)) &&
+             (!('active' in data) || data.active is bool) &&
+             (!('photo' in data) || data.photo == null || (data.photo is string && data.photo.size() <= 1000)) &&
+             isValidTimestamp(data.createdAt) &&
+             (!('updatedAt' in data) || isValidTimestamp(data.updatedAt));
+    }
+
+    function isValidJob(data) {
+      return data.userId == request.auth.uid &&
+             data.customerId is string && data.customerId.size() <= 128 &&
+             data.customerName is string && data.customerName.size() <= 100 &&
+             data.total is number &&
+             (!('vehicleId' in data) || data.vehicleId is string) &&
+             (!('vehicleName' in data) || data.vehicleName is string) &&
+             (!('implementId' in data) || data.implementId is string) &&
+             (!('implementName' in data) || data.implementName is string) &&
+             (!('implementDetailsSnapshot' in data) || data.implementDetailsSnapshot is string) &&
+             (!('dateMillis' in data) || data.dateMillis is number) &&
+             (!('status' in data) || data.status is string) &&
+             (!('rateTypeSnapshot' in data) || data.rateTypeSnapshot is string) &&
+             (!('customUnitSnapshot' in data) || data.customUnitSnapshot is string) &&
+             (!('rateSnapshot' in data) || data.rateSnapshot is number) &&
+             (!('hours' in data) || data.hours is number) &&
+             (!('minutes' in data) || data.minutes is number) &&
+             (!('area' in data) || data.area is number) &&
+             (!('quantity' in data) || data.quantity is number) &&
+             (!('extras' in data) || data.extras is number) &&
+             (!('discount' in data) || data.discount is number) &&
+             (!('paidAmount' in data) || data.paidAmount is number) &&
+             (!('paymentMethod' in data) || data.paymentMethod is string) &&
+             (!('notes' in data) || data.notes is string) &&
+             isValidTimestamp(data.createdAt) &&
+             (!('updatedAt' in data) || isValidTimestamp(data.updatedAt));
+    }
+
+    function isValidExpense(data) {
+      return data.userId == request.auth.uid &&
+             data.category is string && data.category.size() <= 50 &&
+             data.amount is number &&
+             (!('vehicleId' in data) || data.vehicleId is string) &&
+             (!('vehicleName' in data) || data.vehicleName is string) &&
+             (!('litres' in data) || data.litres is number) &&
+             (!('dateMillis' in data) || data.dateMillis is number) &&
+             (!('notes' in data) || data.notes is string) &&
+             (!('photoUri' in data) || data.photoUri is string) &&
+             isValidTimestamp(data.createdAt) &&
+             (!('updatedAt' in data) || isValidTimestamp(data.updatedAt));
+    }
+
+    function isValidTicket(data) {
+      return data.userId == request.auth.uid &&
+             data.issueType is string && data.issueType.size() > 0 && data.issueType.size() <= 50 &&
+             data.message is string && data.message.size() > 0 && data.message.size() <= 2000 &&
+             data.status is string && data.status.size() <= 30 &&
+             (!('name' in data) || data.name == null || (data.name is string && data.name.size() <= 100)) &&
+             (!('phone' in data) || data.phone == null || (data.phone is string && data.phone.size() <= 30)) &&
+             isValidTimestamp(data.createdAt) &&
+             (!('updatedAt' in data) || isValidTimestamp(data.updatedAt));
+    }
+
+    // Default deny all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // User profile document
+    match /users/{userId} {
+      allow get: if isOwner(userId);
+      allow create: if isOwner(userId) && isValidUser(incoming());
+      allow update: if isOwner(userId) && isValidUser(incoming()) && incoming().createdAt == existing().createdAt;
+      allow delete: if isOwner(userId);
+
+      // Customers
+      match /customers/{customerId} {
+        allow get, list: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidCustomer(incoming());
+        allow update: if isOwner(userId) && isValidCustomer(incoming()) && incoming().createdAt == existing().createdAt;
+        allow delete: if isOwner(userId);
+      }
+
+      // Vehicles (Tractors)
+      match /vehicles/{vehicleId} {
+        allow get, list: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidVehicle(incoming());
+        allow update: if isOwner(userId) && isValidVehicle(incoming()) && incoming().createdAt == existing().createdAt;
+        allow delete: if isOwner(userId);
+      }
+
+      // Implements
+      match /implements/{implementId} {
+        allow get, list: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidImplement(incoming());
+        allow update: if isOwner(userId) && isValidImplement(incoming()) && incoming().createdAt == existing().createdAt;
+        allow delete: if isOwner(userId);
+      }
+
+      // Jobs
+      match /jobs/{jobId} {
+        allow get, list: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidJob(incoming());
+        allow update: if isOwner(userId) && isValidJob(incoming()) && incoming().createdAt == existing().createdAt;
+        allow delete: if isOwner(userId);
+      }
+
+      // Expenses
+      match /expenses/{expenseId} {
+        allow get, list: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidExpense(incoming());
+        allow update: if isOwner(userId) && isValidExpense(incoming()) && incoming().createdAt == existing().createdAt;
+        allow delete: if isOwner(userId);
+      }
+    }
+
+    // Customer support tickets
+    match /support_tickets/{ticketId} {
+      allow create: if isSignedIn() && incoming().userId == request.auth.uid && isValidTicket(incoming());
+      allow get: if isSignedIn() && existing().userId == request.auth.uid;
+      allow list: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow update, delete: if false;
+    }
+  }
+}
