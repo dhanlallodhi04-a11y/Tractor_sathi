@@ -1,4 +1,4 @@
-name: tractor sathi
+name: Build APK
 on: [push]
 jobs:
 build:
